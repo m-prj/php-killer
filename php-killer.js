@@ -54,6 +54,7 @@ module.exports = new(function() {
             console.log('kill PID' + phpExe_pid[i]);
             var win_exec = require('child_process').spawn;
             win_exec('taskkill',  ['/f', '/pid', phpExe_pid[i]]);
+            //win_exec('taskkill',  ['/f', '/im', 'php.exe']);
         }
     }
     
